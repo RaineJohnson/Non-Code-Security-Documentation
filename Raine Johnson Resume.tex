@@ -1,0 +1,260 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+            linkcolor = red,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{comment}
+\usepackage{dirtytalk}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\hypersetup{pdfborder = 0 0 0}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Raine Johnson} \\ \vspace{3pt}
+    \small
+    \raisebox{-0.1\height}\faPhone\ +1 (425) 273-1772 ~
+    \href{mailto:rainewow@gmail.com}{\faEnvelope\ rainewow@gmail.com} ~ 
+    \href{https://www.linkedin.com/in/raine-johnson}{\faLinkedin\ linkedin.com/in/raine-johnson}  ~
+    \href{https://github.com/rainejohnson}{\faGithub\ rainejohnson}
+    \vspace{-8pt}
+\end{center}
+
+\begin{comment}
+% -----------Summary-----------
+\section{Objective}
+  \small{Enter your objective here}
+\vspace{-12pt}
+% adjust vscape based on the space you want to leave between each section.
+\end{comment}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+        \resumeSubheading
+      {B.A. Computer Science and Cybersecurity}{Sept 2022 -- Jun 2026}
+      {University of Washington Bothell}{}
+
+      \resumeSubheading
+      {Grayhats Cybersecurity Club}{Aug 2024 -- Present}
+      {University of Washington Bothell}{}
+      %leave a line after this
+   
+  \resumeSubHeadingListEnd
+\vspace{-18pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {University Of Washington}{July 2023 -- Present}
+      {Activity and Recreation Center Building Manager}{Bothell}
+      \resumeItemListStart
+        \resumeItem { Enhanced the ARC’s security by leading cybersecurity awareness training sessions for 50+ employees, reducing risks of human error and potential breaches.}
+        \resumeItem {Implemented security protocols to protect network and technical systems used during events, ensuring adherence to internal cybersecurity policies.}
+        \resumeItem {Maintained secure video, audio, and networking operations, safeguarding data integrity and preventing unauthorized access.}
+        \resumeItemListEnd
+      
+    \resumeSubheading
+      {Bose}{Jan 2022 -- Sept 2022}
+      {Roadshow Engineer}{International}
+      \resumeItemListStart
+        \resumeItem {Collaborated with a team to manage sensitive project files in a secure git repository, ensuring proper version control and access security.}
+        \resumeItem {Designed virtual reality (VR) demonstrations using C++ with a focus on securing communication channels between hardware systems during international presentations.}
+        \resumeItem {Ensured systems operated securely and in line with both marketing and engineering requirements, adhering to data protection and confidentiality standards.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Microsoft}{July 2021 -- Sept 2022}
+      {Certification and Accessibility Tester}{Redmond}
+      \resumeItemListStart
+        \resumeItem {Conducted security tests on Xbox products, including network calls and crash dumps, identifying potential vulnerabilities and enhancing product integrity.}
+        \resumeItem {Introduced and enforced strict security protocols for protecting personal identifiable information (PII) during testing.}
+        \resumeItem {Utilized debugging tools to identify and resolve security issues, including title stability and system integrity, contributing to the overall resilience of Xbox products.}
+%Based on the number of point you want to add the "\resumeItem" for each point you want to add.
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+% adjust vscape based on the space you want to leave between each section.
+
+
+\begin{comment}
+%------------Awards-----------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Name}{Date}
+      {}{}
+      \small{Description.}
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+\end{comment}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-6pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Managing API Keys and Files} $|$ \emph{JavaScript \href{https://github.com/RaineJohnson/Node-Env-Keys-Management}{Github}}}{July 2024}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a secure system to manage and store API keys, ensuring proper encryption and access control.}
+            \resumeItem{Automated processes for API key rotation and monitoring to reduce the risk of unauthorized access.}
+            \resumeItem{Developed best practices for file handling and storage, focusing on data encryption and minimizing exposure of sensitive information.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+
+    \resumeProjectHeading
+          {\textbf{SQL Injection Prevention} $|$ \emph{CSS, EJS, JavaScript \href{https://github.com/RaineJohnson/SQL-Injection-Project}{Github}}}{July 2024}
+          \resumeItemListStart
+            \resumeItem{Developed and implemented input validation techniques to prevent SQL injection vulnerabilities in web applications.}
+            \resumeItem{Utilized prepared statements and parameterized queries to securely handle user inputs and prevent malicious SQL execution.}
+            \resumeItem{Conducted security audits and testing to identify and mitigate potential SQL injection risks, ensuring database integrity and protection.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeSubHeadingListEnd
+\vspace{-3pt}
+
+%-----------Technical Skills-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Skills}{: Incident Response, Ethical Hacking, Scripting, NIST Cybersecurity Framework, XCERT, Fiddler, C++, Java, HTML, SQL, Python, git, GitHub, LaTeX, Packet Filtering, Risk Analysis, Penetration Testing, Node.js, Cross-Site Request Forgery, Security Logging, Access Control} \\
+     
+    }}
+ \end{itemize}
+ \vspace{-20pt}
+
+\begin{comment}
+%------------Publications-----------
+\section{Publication}
+\vspace{-6pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{The Title of your paper} $|$ 
+    \emph{\href{https://www.researchgate.net}{Publication link}}}{Month Year}
+    \resumeItemListStart
+            \resumeItem{Write about your paper.}
+            \resumeItem{Write about your paper.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+% adjust vscape based on the space you want to leave between each section.
+\end{comment}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Certifications}
+\textbf{Certificate 1}{: ISC2 CISSP Cybersecurity Certification} \\
+\textbf{Certificate 2} {: Codecademy Cybersecurity Certification} \\
+\textbf{Certificate 3} {: Cascadia College Computer Programming Foundations Certificate}
+
+
+
+\end{document}
