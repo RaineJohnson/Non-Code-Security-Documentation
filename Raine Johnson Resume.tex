@@ -138,9 +138,6 @@
       {B.S. Computer Science and Cybersecurity}{Sept 2022 -- Jan 2026}
       {University of Washington Bothell}{}
 
-      \resumeSubheading
-      {Grayhats Cybersecurity Club}{Aug 2024 -- Jan 2026}
-      {University of Washington Bothell}{}
       %leave a line after this
    
   \resumeSubHeadingListEnd
@@ -203,20 +200,20 @@
     \vspace{-6pt}
     \resumeSubHeadingListStart
     \resumeProjectHeading
-          {\textbf{Managing API Keys and Files} $|$ \emph{JavaScript \href{https://github.com/RaineJohnson/Node-Env-Keys-Management}{Github}}}{July 2024}
+          {\textbf{Secure Home Lab Network Architecture \& Hardening} $|$ \emph{pfSense, Proxmox, Suricata, ntopng \href{https://github.com/RaineJohnson}{}}}{}
           \resumeItemListStart
-            \resumeItem{Designed and implemented a secure system to manage and store API keys, ensuring proper encryption and access control.}
-            \resumeItem{Automated processes for API key rotation and monitoring to reduce the risk of unauthorized access.}
-            \resumeItem{Developed best practices for file handling and storage, focusing on data encryption and minimizing exposure of sensitive information.}
+            \resumeItem{Built a layered home lab network on Proxmox with pfSense as the perimeter firewall/router, segmented into multiple VLANs using Ubiquiti UniFi switches and Access Points to emulate enterprise segmentation.}
+            \resumeItem{Deployed Suricata IDS/IPS and ntopng for real-time traffic analysis and threat detection, tuning signatures and flow monitoring to identify anomalous behavior across internal and external network traffic.}
+            \resumeItem{Integrated OpenVPN and WireGuard tunnels for secure remote access into the home lab, with automated VPN key management and strict access policies to isolate administrative traffic.}
           \resumeItemListEnd
           \vspace{-14pt}
 
     \resumeProjectHeading
-          {\textbf{SQL Injection Prevention} $|$ \emph{CSS, EJS, JavaScript \href{https://github.com/RaineJohnson/SQL-Injection-Project}{Github}}}{July 2024}
+          {\textbf{Custom Password Manager \& Credential Security App} $|$ \emph{Python, Linux CLI, AES-CBC, SHA-256, \href{https://github.com/RaineJohnson/PersonalPasswordManager.git}{Github}}}{}
           \resumeItemListStart
-            \resumeItem{Developed and implemented input validation techniques to prevent SQL injection vulnerabilities in web applications.}
-            \resumeItem{Utilized prepared statements and parameterized queries to securely handle user inputs and prevent malicious SQL execution.}
-            \resumeItem{Conducted security audits and testing to identify and mitigate potential SQL injection risks, ensuring database integrity and protection.}
+            \resumeItem{Developed a CLI-based password manager in Python supporting encrypted storage and management of multiple credential records within a local database.}
+            \resumeItem{Implemented AES-CBC encryption at rest using PyCryptodome and SHA-256 hashing for master password verification, preventing plaintext credential exposure.}
+            \resumeItem{Built secure credential lifecycle features, including password generation, rotation, backup, and database erasure with authentication enforcement.}
           \resumeItemListEnd
           \vspace{-14pt}
     \resumeSubHeadingListEnd
@@ -226,7 +223,7 @@
 \section{Skills and Tools}
  \begin{itemize}[leftmargin=0.1in, label={}]
     \small{\item{
-     {Armis, Dispel, Wireshark, Cisco ISE, OracleVM, Nessus, NMAP, Splunk SIEM, Metasploit, SentinelOne, Incident Response, Ethical Hacking, Scripting, Kali Linux, Ubuntu, ServiceNow, Palo Alto Firewalls, Tenable, PowerBI, NIST Cybersecurity Framework, Illumio, XCERT, Fiddler, C++, Java, HTML, SQL, Python, git, GitHub, LaTeX, Packet Filtering, Risk Analysis, Penetration Testing, Threat Hunting, Node.js, Cross-Site Request Forgery, Security Logging, Access Control} \\
+     {Armis, Dispel, Cisco ISE, Palo Alto Firewalls, Illumio, pfSense, VLANs, network segmentation, packet filtering, Wireshark, Nmap, Nessus/Tenable, Splunk SIEM, SentinelOne, Metasploit (lab use), Kali Linux, Ubuntu, ServiceNow, Power BI, incident detection and response, access control, least-privilege enforcement, secure credential handling, risk analysis, NIST Cybersecurity Framework, Python, Java, JavaScript, SQL, HTML/CSS, Node.js (basic), secure scripting, encryption and hashing, Git, GitHub, virtualization (Oracle VM / VirtualBox), traffic analysis, VPN fundamentals, vulnerability scanning, threat hunting fundamentals, secure logging and monitoring, web security fundamentals (CSRF, injection risks).} \\
      
     }}
  \end{itemize}
@@ -251,9 +248,9 @@
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Certifications}
-\textbf{Certificate 1} {: ISC2 Cybersecurity Certification} \\
+\textbf{Certificate 1} {: ISC2 Certified in Cybersecurity Certification} \\
 \textbf{Certificate 2} {: Codecademy Cybersecurity Certification} \\
-\textbf{Certificate 3} {: Cascadia College Computer Programming Foundations Certificate}
+\textbf{Certificate 3} {: TryHackMe Security Analyst Certification}
 
 
 
